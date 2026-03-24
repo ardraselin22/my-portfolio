@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ardra Selin A G | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#0f172a;
+    color:white;
+    scroll-behavior:smooth;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    background:#020617;
+    position:sticky;
+    top:0;
+}
+header h1{
+    color:#38bdf8;
+}
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:white;
+}
+nav a:hover{
+    color:#38bdf8;
+}
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    animation:fadeIn 2s ease-in;
+}
+.hero img{
+    width:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:3px solid #38bdf8;
+}
+.hero h2{
+    font-size:40px;
+}
+.hero span{
+    color:#38bdf8;
+}
+.hero p{
+    margin:15px 0;
+    max-width:600px;
+}
+.btn{
+    padding:10px 20px;
+    background:#38bdf8;
+    border:none;
+    color:black;
+    cursor:pointer;
+    border-radius:5px;
+}
+.section{
+    padding:60px 50px;
+}
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:#020617;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+/* Contact buttons */
+.contact-btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);} 
+    to{opacity:1; transform:translateY(0);} 
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MyPortfolio</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<img src="profile.jpg" alt="Profile Photo">
+<h2>Hi, I'm <span>Ardra Selin A G</span></h2>
+<p>
+A passionate Data Analyst pursuing M.Sc Computer Science (Specialisation in Data Analytics), 
+focused on extracting insights from data, building analytical models, and supporting 
+data-driven decision making.
+</p>
+<button class="btn" onclick="document.getElementById('projects').scrollIntoView()">
+View My Work
+</button>
+</section>
+
+<section class="section" id="about">
+<h2>About Me</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Education</h3>
+<p>M.Sc Computer Science (Specialisation in Data Analytics)</p>
+</div>
+
+<div class="card">
+<h3>Skills</h3>
+<p>Python, SQL, Data Analysis, Machine Learning, Power BI, Tableau, HTML, CSS</p>
+</div>
+
+<div class="card">
+<h3>Achievements</h3>
+<p>Worked on data analytics projects, built dashboards, and analyzed real-world datasets.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="projects">
+<h2>Projects</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Data Analysis Project</h3>
+<p>Analyzed datasets to identify trends and insights using Python and visualization tools.</p>
+</div>
+
+<div class="card">
+<h3>Dashboard Project</h3>
+<p>Created interactive dashboards using Power BI/Tableau for decision making.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning Model</h3>
+<p>Built predictive models to solve real-world problems using machine learning techniques.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+
+<div style="text-align:center; margin-top:20px;">
+
+<a href="mailto:ardraselin22@gmail.com.com" class="contact-btn" style="background:#38bdf8; color:black;">
+📧 Email Me
+</a>
+
+<a href="https://www.linkedin.com/in/ardra-selin-a-g-739674355/" target="_blank" class="contact-btn" style="background:#0a66c2; color:white;">
+🔗 LinkedIn
+</a>
+
+<
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Ardra Selin A G | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
